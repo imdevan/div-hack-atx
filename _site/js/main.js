@@ -7,12 +7,12 @@
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var inner = t[i].property1;
-      for(var prop in inner) {
-        $(".apptest").append("<p>"+inner[prop].toString()+"</p>");
-      }
+      console.log(inner);
+      //<li class="article"><a href=""></a></li>
+      $("#news").append("<li class=\"article\"><a href=\""+ inner["href"] + "\">" + inner["text"] + "</a></li>" );
     }
   },
   error: function (xhr, status) {
     //handle errors
   }
-});
+})
