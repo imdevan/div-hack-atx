@@ -1,0 +1,25 @@
+# This will be the first part of the title tag for your site <title> site.name + page.title </title>
+name: Devan Huapaya
+
+# Populates the meta description for the site. Should be under 150 characters for best SEO purposes.
+description: "Personal website of super awesome front end developer unicorn person, Devannnnn Huapaya!"
+
+# Owner (organization or individual) of site content
+author: Devan Huapaya
+
+#url: "[http:// ]"
+url: "http://devan.im"
+
+markdown: kramdown
+
+# Pagination variable for how many posts to show in a list
+paginate: 5
+
+# Style of permalinks
+permalink: /:categories/:title
+
+gems: ['jekyll-sitemap']
+
+pygments: true
+
+exclude: [node_modules, Gruntfile.js, package.json]
