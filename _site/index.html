@@ -33,9 +33,13 @@
    <main class="_page">
 	
 		<style>
+
 			.column {
+				float:left;
 				width: 31%;
 				display: inline-block;
+				background-color: #99CCFF;
+				height:100vh;
 			}
 			.column:nth-of-type(2) {
 				margin:0 2%;
@@ -46,19 +50,18 @@
 			.column-title h2 {
 				font-weight: bold;
 				color:#999;
-				font-size: 14px;
+				font-size: 18px;
 				text-transform: uppercase;
 				padding:10px;
 				margin:0;
 			}
 			.article li {
-				background:white;
+				background-color:white;
 				margin: 1rem 0;
   			list-style: none;
   			font-family:Verdana;
   			padding:10px;
   			transition: all linear .2s;
-  			opacity:.8;
 			}
 			.article li:hover:not(.column-title) {
 				opacity: 1;
@@ -72,23 +75,26 @@
 			}
 		</style>
 				<div class="column">
-					<ul class="article">
+					<ul class="article" id="news">
 						<li class="column-title"><h2>NEWS</h2></li>
-						<li class="article"><a href="">List Item 1</a></li>
-						<li class="article"><a href="">List Item 2</a></li>
+						<li class="article"><a href="http://www.usnews.com/topics/subjects/diversity">US News</a></li>
+						<li class="article"><a href="http://www.edweek.org/topics/diversity/">Education Week</a></li>
+						<li class="article"><a href="http://diversitynewsmagazine.com/">Diversity News Magazine</a></li>
 					</ul>
 				</div>
 
 				<div class="column">
-					<ul class="article">
+					<ul class="article" id="stem">
 						<li class="column-title"><h2>STEM</h2></li>
-						<li class="article"><a href="">List Item 1</a></li>
-						<li class="article"><a href="">List Item 2</a></li>
+						<li class="article"><a href="http://stemdiv.ucsc.edu/">STEM Diversity Programs</a></li>
+						<li class="article"><a href="http://www.eop.com/stemexpo">STEM Diversity Career Expo</a></li>
+						<li class="article"><a href="http://bit.ly/1EwKzHm">Diversity in Stem</a></li>
+						<li class="article"><a href="http://bit.ly/1J59wVf">Tree of Life: STEM Diversity</a></li>
 					</ul>
 				</div>
 
 				<div class="column">
-					<ul class="article">
+					<ul class="article" id="scholarships">
 						<li class="column-title"><h2>SCHOLARSHIPS</h2></li>
 						<li class="article"><a href="">List Item 1</a></li>
 						<li class="article"><a href="">List Item 2</a></li>
