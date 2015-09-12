@@ -1,2 +1,2 @@
-body{padding:0;margin:0;background:#4965a2;font-family:Raleway;font-weight:400}body div{color:#000}.nav{border-bottom:1px solid rgba(95,158,160,.5);padding:2pc;padding:2rem;position:relative;background:#fff}.nav--action-item{position:absolute;right:2pc;right:2rem;top:2pc;top:2rem}._page{height:100%}
+body{padding:0;margin:0;background:#4965a2;font-family:Raleway;font-weight:400}body div{color:#000}.nav{border-bottom:1px solid rgba(95,158,160,.5);padding:2pc;padding:2rem;position:relative;background:#fff}.nav--action-item{position:absolute;right:2pc;right:2rem;top:2pc;top:2rem}._page{height:100%;display:-webkit-flex;display:-ms-flexbox;display:flex}
 /*# sourceMappingURL=s_main.css.map */

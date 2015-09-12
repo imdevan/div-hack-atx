@@ -36,14 +36,23 @@
 
 			.column {
 				float:left;
-				width: 31%;
-				display: inline-block;
-				background-color: #99CCFF;
+				width:33.3%;
 				height:100vh;
+				padding:2em;
 			}
-			.column:nth-of-type(2) {
-				margin:0 2%;
+			
+			#newscolumn{
+				background-color: #99CCFF;
 			}
+
+			#stemcolumn{
+				background-color: #5CD65C;
+			}
+
+			#scholarcolumn{
+				background-color: #FF6666;
+			}
+
 			ul.article {
 				padding:0;
 			}
@@ -74,16 +83,13 @@
 
 			}
 		</style>
-				<div class="column">
+				<div class="column" id="newscolumn">
 					<ul class="article" id="news">
 						<li class="column-title"><h2>NEWS</h2></li>
-						<li class="article"><a href=""></a></li>
-						<li class="article"><a href="http://www.edweek.org/topics/diversity/">Education Week</a></li>
-						<li class="article"><a href="http://diversitynewsmagazine.com/">Diversity News Magazine</a></li>
 					</ul>
 				</div>
 
-				<div class="column">
+				<div class="column" id="stemcolumn">
 					<ul class="article" id="stem">
 						<li class="column-title"><h2>STEM</h2></li>
 						<li class="article"><a href="http://stemdiv.ucsc.edu/">STEM Diversity Programs</a></li>
@@ -93,7 +99,7 @@
 					</ul>
 				</div>
 
-				<div class="column">
+				<div class="column" id="scholarcolumn">
 					<ul class="article" id="scholarships">
 						<li class="column-title"><h2>SCHOLARSHIPS</h2></li>
 						<li class="article"><a href="">List Item 1</a></li>
