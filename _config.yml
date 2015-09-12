@@ -20,6 +20,4 @@ permalink: /:categories/:title
 
 gems: ['jekyll-sitemap']
 
-pygments: true
-
 exclude: [node_modules, Gruntfile.js, package.json]
