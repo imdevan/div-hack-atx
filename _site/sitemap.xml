@@ -17,4 +17,16 @@
     <loc>http://devan.im/bower_components/sassy-maps/examples/index.html</loc>
     <lastmod>2015-09-12T11:18:16-05:00</lastmod>
   </url>
+  <url>
+    <loc>http://devan.im/Chrome Extension/src/bg/background.html</loc>
+    <lastmod>2015-09-12T11:52:10-05:00</lastmod>
+  </url>
+  <url>
+    <loc>http://devan.im/Chrome Extension/src/browser_action/browser_action.html</loc>
+    <lastmod>2015-09-12T11:52:10-05:00</lastmod>
+  </url>
+  <url>
+    <loc>http://devan.im/Chrome Extension/src/override/override.html</loc>
+    <lastmod>2015-09-12T11:52:10-05:00</lastmod>
+  </url>
 </urlset>
