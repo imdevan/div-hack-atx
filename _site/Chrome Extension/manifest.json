@@ -1,5 +1,5 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "PanDiversity",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "This extension was created with the awesome extensionizr.com",
@@ -13,11 +13,6 @@
   "background": {
     "page": "src/bg/background.html",
     "persistent": true
-  },
-  "browser_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "browser action demo",
-    "default_popup": "src/browser_action/browser_action.html"
   },
   "chrome_url_overrides": {
     "newtab": "src/override/override.html"
