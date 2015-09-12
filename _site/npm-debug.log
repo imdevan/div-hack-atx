@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@2.7.5
+3 info using node@v0.10.30
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart Panda-But-Not@0.1.0
+6 info start Panda-But-Not@0.1.0
+7 verbose unsafe-perm in lifecycle true
+8 info Panda-But-Not@0.1.0 Failed to exec start script
+9 verbose stack Error: Panda-But-Not@0.1.0 start: `grunt`
+9 verbose stack Exit status 6
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+9 verbose stack     at EventEmitter.emit (events.js:98:17)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+9 verbose stack     at ChildProcess.emit (events.js:98:17)
+9 verbose stack     at maybeClose (child_process.js:756:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:823:5)
+10 verbose pkgid Panda-But-Not@0.1.0
+11 verbose cwd /Users/ginahelfrich/Documents/div-hack-atx
+12 error Darwin 14.5.0
+13 error argv "node" "/usr/local/bin/npm" "start"
+14 error node v0.10.30
+15 error npm  v2.7.5
+16 error code ELIFECYCLE
+17 error Panda-But-Not@0.1.0 start: `grunt`
+17 error Exit status 6
+18 error Failed at the Panda-But-Not@0.1.0 start script 'grunt'.
+18 error This is most likely a problem with the Panda-But-Not package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     grunt
+18 error You can get their info via:
+18 error     npm owner ls Panda-But-Not
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
