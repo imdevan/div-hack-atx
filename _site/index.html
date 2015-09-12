@@ -33,48 +33,67 @@
    <main class="_page">
 	
 		<style>
-				li{
-					background:white;
-					 margin: 1rem 0;
-  					line-height: 3em;
-  					list-style: none;
-  					font-family:Verdana;
+			.column {
+				width: 31%;
+				display: inline-block;
+			}
+			.column:nth-of-type(2) {
+				margin:0 2%;
+			}
+			ul.article {
+				padding:0;
+			}
+			.column-title h2 {
+				font-weight: bold;
+				color:#999;
+				font-size: 14px;
+				text-transform: uppercase;
+				padding:10px;
+				margin:0;
+			}
+			.article li {
+				background:white;
+				margin: 1rem 0;
+  			list-style: none;
+  			font-family:Verdana;
+  			padding:10px;
+  			transition: all linear .2s;
+  			opacity:.8;
+			}
+			.article li:hover:not(.column-title) {
+				opacity: 1;
+				box-shadow: 0 0 3px rgba(0,0,0,.2);
 			}
 			a{
 				text-decoration: none;
+				color:#343434;
+				font-size:16px;
+
 			}
 		</style>
-		<table>
-			<td>
-				<div style="width:500px; height:200px;">
+				<div class="column">
 					<ul class="article">
-						<li><h2>NEWS</h2></li>
+						<li class="column-title"><h2>NEWS</h2></li>
 						<li class="article"><a href="">List Item 1</a></li>
 						<li class="article"><a href="">List Item 2</a></li>
 					</ul>
 				</div>
-			</td>
-			
-			<td>
-				<div style="width:500px; height:200px;">
-					<ul class="article">
-						<li><h2>STEM</h2></li>
-						<li class="article"><a href="">List Item 1</a></li>
-						<li class="article"><a href="">List Item 2</a></li>
-					</ul>
-				</div>
-			</td>
 
-			<td>
-				<div style="width:500px; height:200px;">
+				<div class="column">
 					<ul class="article">
-						<li><h2>SCHOLARSHIPS</h2></li>
+						<li class="column-title"><h2>STEM</h2></li>
 						<li class="article"><a href="">List Item 1</a></li>
 						<li class="article"><a href="">List Item 2</a></li>
 					</ul>
 				</div>
-			</td>
-		</table>
+
+				<div class="column">
+					<ul class="article">
+						<li class="column-title"><h2>SCHOLARSHIPS</h2></li>
+						<li class="article"><a href="">List Item 1</a></li>
+						<li class="article"><a href="">List Item 2</a></li>
+					</ul>
+				</div>
 </main>
    <footer class="_footer">
 

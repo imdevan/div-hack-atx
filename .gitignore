@@ -1,3 +1,4 @@
+.sass-cache
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -5,7 +6,7 @@ _site
 
 # Icon must end with two \r
 Icon
-
+*.log
 
 # Thumbnails
 ._*
