@@ -31,7 +31,7 @@
         margin:0;
         padding:10px;
         text-align: center;
-        text-transform: uppercase;
+        // text-transform: uppercase;
     }
     
     &--link {   
@@ -43,7 +43,7 @@
         background-color: white;
         margin: 1rem 2rem;
         list-style: none;
-        font-family:Verdana;
+        font-family: Helvetica;
         padding:10px;
         transition: all linear .2s;
         box-shadow: 0 0 3px rgba(0,0,0,.2);
@@ -55,7 +55,6 @@
     &--container {
         overflow-y: scroll;
         height: 90%;
-        // height: 70%;
         flex: 1;
         &::-webkit-scrollbar { 
             display: none; 
