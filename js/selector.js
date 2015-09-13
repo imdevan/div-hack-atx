@@ -31,6 +31,7 @@ var v, newsreader = {
         v.selector_buttons.click(function() {
             $(v.selectors).removeClass("open");
             $(v.lists[v.updating_index]).empty();
+            $(v.lists[v.updating_index]).parent().parent().attr('class', '_column ' + $(this).attr("data-id"));
             ajaxRequest(v.lists[v.updating_index], api[$(this).attr("data-id")]);
         });
     }

@@ -1,0 +1,75 @@
+@mixin colorColumn($c) {
+    background-color: $c;
+}
+
+._column {
+    display: flex;
+    flex-direction: column;
+    float:left;
+    box-sizing: border-box;
+    width:33.3%;
+    height: calc(100vh - 6rem);
+    padding: 2em 0;
+    transition: background-color $medEaseInOut;
+    
+    &.huffpost {
+        @include colorColumn($huffingtonPostC);
+    }
+
+    &.verge {
+        @include colorColumn($vergeC);
+    }
+
+    &.mashable {
+        @include colorColumn($mashableC);
+    }
+
+    &.imdiversity {
+        @include colorColumn($IMDiversityC);
+    }
+
+    &.newser {
+        @include colorColumn($NewserC);
+    }
+
+    &.agsci {
+        @include colorColumn($PennStateC);
+    }
+
+    &.diversityinc {
+        @include colorColumn($DiversityIncC);
+    }
+
+    &.entrepreneur {
+        @include colorColumn($EntrepreneurC);
+    }
+
+    &.indian {
+        @include colorColumn($AmericanIndianC);
+    }
+
+    &.african {
+        @include colorColumn($AfricanAmericanSC);
+    }
+
+    &.middleeastern {
+        @include colorColumn($MiddleEasternSC);
+    }
+
+    &.latino {
+        @include colorColumn($HispanicLSC);
+    }
+
+    &.asian {
+        @include colorColumn($AsianAmericanSC);
+    }
+
+    &.women {
+        @include colorColumn($SforWomenC);
+    }
+
+    &.lgbt {
+        @include colorColumn($LGBTSC);
+    }
+}
+

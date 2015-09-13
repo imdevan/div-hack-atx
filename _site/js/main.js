@@ -10,7 +10,6 @@ function ajaxRequest(id, apiurl) {
     success: function (response) {
       var t = response.results.collection1;
       var i = 0;                     //  set your counter to 1
-
       function myLoop () {           //  create a loop function
          setTimeout(function () {    //  call a 3s setTimeout when the loop is called
             var prop = t[i].property1;         //  your code here

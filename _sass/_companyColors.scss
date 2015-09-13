@@ -26,63 +26,65 @@ $LGBTSC: #16a085;
     }
 }
 
-.huffpost {
-    @include invertColorOnHover($huffingtonPostC);
-}
+.selector {
+    .huffpost {
+        @include invertColorOnHover($huffingtonPostC);
+    }
 
-.verge {
-    @include invertColorOnHover($vergeC);
-}
+    .verge {
+        @include invertColorOnHover($vergeC);
+    }
 
-.mashable {
-    @include invertColorOnHover($mashableC);
-}
+    .mashable {
+        @include invertColorOnHover($mashableC);
+    }
 
-.imdiversity {
-    @include invertColorOnHover($IMDiversityC);
-}
+    .imdiversity {
+        @include invertColorOnHover($IMDiversityC);
+    }
 
-.newser {
-    @include invertColorOnHover($NewserC);
-}
+    .newser {
+        @include invertColorOnHover($NewserC);
+    }
 
-.agsci {
-    @include invertColorOnHover($PennStateC);
-}
+    .agsci {
+        @include invertColorOnHover($PennStateC);
+    }
 
-.diversityinc {
-    @include invertColorOnHover($DiversityIncC);
-}
+    .diversityinc {
+        @include invertColorOnHover($DiversityIncC);
+    }
 
-.entrepreneur {
-    @include invertColorOnHover($EntrepreneurC);
-}
+    .entrepreneur {
+        @include invertColorOnHover($EntrepreneurC);
+    }
 
-.indian {
-    @include invertColorOnHover($AmericanIndianC);
-}
+    .indian {
+        @include invertColorOnHover($AmericanIndianC);
+    }
 
-.african {
-    @include invertColorOnHover($AfricanAmericanSC);
-}
+    .african {
+        @include invertColorOnHover($AfricanAmericanSC);
+    }
 
-.middleeastern {
-    @include invertColorOnHover($MiddleEasternSC);
-}
+    .middleeastern {
+        @include invertColorOnHover($MiddleEasternSC);
+    }
 
-.latino {
-    @include invertColorOnHover($HispanicLSC);
-}
+    .latino {
+        @include invertColorOnHover($HispanicLSC);
+    }
 
-.asian {
-    @include invertColorOnHover($AsianAmericanSC);
-}
+    .asian {
+        @include invertColorOnHover($AsianAmericanSC);
+    }
 
-.women {
-    @include invertColorOnHover($SforWomenC);
-}
+    .women {
+        @include invertColorOnHover($SforWomenC);
+    }
 
-.lgbt {
-    @include invertColorOnHover($LGBTSC);
+    .lgbt {
+        @include invertColorOnHover($LGBTSC);
+    }
 }
 
