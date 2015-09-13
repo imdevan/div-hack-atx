@@ -8,11 +8,12 @@ function ajaxRequest(id, apiurl) {
   crossDomain: true,
     dataType: "jsonp",
     success: function (response) {
+			console.log(id);
       var t = response.results.collection1;
       for(var i = 0; i < t.length; i++) {
         var prop = t[i].property1;
         postArticle(id, prop["href"], prop["text"]);
-      } 
+      }
     }
   });
 }
@@ -24,7 +25,7 @@ var api = {
 
 $('.article-list--title').on('click', function () {
   for(var key in api) {
-    console.log(key);
+    // console.log(key);
   }
 });
 
@@ -33,3 +34,15 @@ ajaxRequest('#news-list', api.huffpost);
 ajaxRequest('#stem-list', api.verge);
 
 ajaxRequest('#scholarship-list', api.mashable);
+
+var titlename = 'news-list-title';
+document.getElementById(titlename).onclick = function () {
+	console.log("this is the news title clicked");
+	var listname = titlename.substr(0,titlename.length-6);
+	var correspondinglist = document.getElementById(listname);
+	console.log(correspondinglist);
+	while (correspondinglist.hasChildNodes()) {
+		correspondinglist.removeChild(correspondinglist.firstChild);
+	}
+	ajaxRequest('#' + listname, api.mashable);
+};
