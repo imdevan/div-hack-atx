@@ -1,9 +1,7 @@
 {
-  "name": "imdevan.github.io",
+  "name": "PanDiversity",
   "version": "0.0.0",
-  "authors": [
-    "Devan Huapaya <huapayadevan@gmail.com>"
-  ],
+  "authors": [],
   "main": "./_sass/i.scss",
   "moduleType": [
     "globals"
