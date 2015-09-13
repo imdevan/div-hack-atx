@@ -107,7 +107,7 @@ var api = {
       },
   mic: {
       url: "https://www.kimonolabs.com/api/dpbzxyrc?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-      name: "Mic News"
+      name: ".Mic"
       }
 }
 
