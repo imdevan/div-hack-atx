@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        {% if page.title %} {{ page.title }} | {% endif %} {{site.author}}
+        {% if page.title %} {{ page.title }} | {% endif %} {{site.name}}
     </title>
     <meta name="author" content="{{site.author}}"> {% if page.excerpt %}
     <meta name="description" content="{{page.excerpt | strip_html}}"> {% else %}
@@ -13,13 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/s_main.css"> {% if page.header_img %}
     <link rel="image_src" href="{{page.header_img}}" /> {% endif %}

@@ -15,7 +15,19 @@
     <lastmod>2014-06-03T09:49:55-05:00</lastmod>
   </url>
   <url>
-    <loc>/Chrome Extension/src/override/override.html</loc>
-    <lastmod>2015-09-12T13:58:12-05:00</lastmod>
+    <loc>/Chrome Extension/src/override/bower_components/imagesloaded/test/index.html</loc>
+    <lastmod>2015-09-13T09:51:48-05:00</lastmod>
+  </url>
+  <url>
+    <loc>/Chrome Extension/src/override/bower_components/sassy-maps/examples/index.html</loc>
+    <lastmod>2015-09-13T09:51:48-05:00</lastmod>
+  </url>
+  <url>
+    <loc>/Chrome Extension/src/override/index.html</loc>
+    <lastmod>2015-09-13T09:51:48-05:00</lastmod>
+  </url>
+  <url>
+    <loc>/Chrome Extension/src/override2/index.html</loc>
+    <lastmod>2015-09-13T10:05:17-05:00</lastmod>
   </url>
 </urlset>

@@ -6,7 +6,7 @@ function ajaxRequest(id, apiurl) {
   $.ajax({
   url: apiurl,
   crossDomain: true,
-    dataType: "jsonp",
+    dataType: "json",
     success: function (response) {
       var t = response.results.collection1;
       var i = 0;
