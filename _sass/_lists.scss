@@ -12,6 +12,11 @@
         text-align: center;
     }
 
+    &--title-icon {
+        transform: scaleY(-1) translateY(20%) translateX(-40%);
+        color: rgba(white, 0.5);
+    }
+
     &--link {
         text-decoration: none;
         color: #343434;
