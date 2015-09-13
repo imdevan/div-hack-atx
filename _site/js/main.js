@@ -16,9 +16,20 @@ function ajaxRequest(id, apiurl) {
     }
   });
 }
+var api = {
+  huffpost:  "https://www.kimonolabs.com/api/1vnzmulw?apikey=82g96zzCQGXPX0Z3htZgjT74Vc7hvFCN",
+  verge: "https://www.kimonolabs.com/api/2dje4o7w?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+  mashable:  "https://www.kimonolabs.com/api/4zgbid62?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC"
+}
 
-ajaxRequest('#news-list', "https://www.kimonolabs.com/api/1vnzmulw?apikey=82g96zzCQGXPX0Z3htZgjT74Vc7hvFCN");
+$('.article-list--title').on('click', function () {
+  for(var key in api) {
+    console.log(key);
+  }
+});
 
-ajaxRequest('#stem-list', "https://www.kimonolabs.com/api/2dje4o7w?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC");
+ajaxRequest('#news-list', api.huffpost);
 
-ajaxRequest('#scholarship-list', "https://www.kimonolabs.com/api/4zgbid62?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC");
+ajaxRequest('#stem-list', api.verge);
+
+ajaxRequest('#scholarship-list', api.mashable);
