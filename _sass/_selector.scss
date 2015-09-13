@@ -58,12 +58,7 @@ $selector-bg: white;
     }
 }
 
-<<<<<<< HEAD
-@keyframes fadeInUp {
-    0% { }
-    100% { transform: translateY(0); opacity: 1;}
-}
-=======
+
 @keyframes fadeInVissibility {
     0% {
         visibility: hidden;
@@ -76,4 +71,3 @@ $selector-bg: white;
         transform: translateY(0);
     }
 }
->>>>>>> 2bf0b620a5b33d5cef58649699b013ce52a05cb0
