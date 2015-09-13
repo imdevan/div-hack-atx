@@ -5,9 +5,9 @@
   "description": "This extension was created with the awesome extensionizr.com",
   "homepage_url": "http://extensionizr.com",
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "img/panda.jpg",
+    "48": "img/panda.png",
+    "128": "img/panda2.png"
   },
   "permissions": [
     "*://www.kimonolabs.com/api/*",
