@@ -1,0 +1,88 @@
+
+$huffingtonPostC: #99CCFF;
+$vergeC: #5CD65C;
+$mashableC: #FF6666;
+$IMDiversityC: #1abc9c;
+$NewserC: #16a085;
+$PennStateC: #bdc3c7;
+$DiversityIncC: #f1c40f;
+$EntrepreneurC: #f39c12;
+$AmericanIndianC: #e67e22;
+$ScholarshipsC: #c0392b;
+$AfricanAmericanSC: #3498db;
+$MiddleEasternSC: #2980b9;
+$HispanicLSC: #9b59b6;
+$AsianAmericanSC: #8e44ad;
+$SforWomenC: #34495e;
+$LGBTSC: #16a085;
+
+
+// invert color on hover
+@mixin invertColorOnHover($c, $bg: white) {
+    color: $c;
+    &:hover {
+        background: $c;
+        color: $bg;
+    }
+}
+
+.huffpost {
+    @include invertColorOnHover($huffingtonPostC);
+}
+
+.verge {
+    @include invertColorOnHover($vergeC);
+}
+
+.mashable {
+    @include invertColorOnHover($mashableC);
+}
+
+.imdiversity {
+    @include invertColorOnHover($IMDiversityC);
+}
+
+.newser {
+    @include invertColorOnHover($NewserC);
+}
+
+.agsci {
+    @include invertColorOnHover($PennStateC);
+}
+
+.diversityinc {
+    @include invertColorOnHover($DiversityIncC);
+}
+
+.entrepreneur {
+    @include invertColorOnHover($EntrepreneurC);
+}
+
+.indian {
+    @include invertColorOnHover($AmericanIndianC);
+}
+
+.african {
+    @include invertColorOnHover($AfricanAmericanSC);
+}
+
+.middleeastern {
+    @include invertColorOnHover($MiddleEasternSC);
+}
+
+.latino {
+    @include invertColorOnHover($HispanicLSC);
+}
+
+.asian {
+    @include invertColorOnHover($AsianAmericanSC);
+}
+
+.women {
+    @include invertColorOnHover($SforWomenC);
+}
+
+.lgbt {
+    @include invertColorOnHover($LGBTSC);
+}
+
