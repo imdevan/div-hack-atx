@@ -47,6 +47,8 @@
         transition: all linear .2s;
         box-shadow: 0 0 3px rgba(0,0,0,.2);
         border-radius: 2.5px;
+        animation: slideIn $quickCubic;
+        
         &:hover {
             box-shadow: 0 0 20px rgba(0,0,0,.2);
         }
@@ -61,4 +63,9 @@
             display: none;
         }
     }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-25%); }
+    100% { transform: translateX(0%); }
 }

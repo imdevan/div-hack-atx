@@ -1,4 +1,5 @@
 $selector-bg: white;
+
 .selector {
     background: $selector-bg;
     border-radius: 2.5px;
@@ -15,10 +16,7 @@ $selector-bg: white;
     visibility: hidden;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    &::-webkit-scrollbar {
-        display: none;
-    }
+    transition: all $quickCubic;
 
     &.open {
         visibility: visible;
@@ -60,7 +58,22 @@ $selector-bg: white;
     }
 }
 
+<<<<<<< HEAD
 @keyframes fadeInUp {
     0% { }
     100% { transform: translateY(0); opacity: 1;}
 }
+=======
+@keyframes fadeInVissibility {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+>>>>>>> 2bf0b620a5b33d5cef58649699b013ce52a05cb0

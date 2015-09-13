@@ -9,10 +9,20 @@ function ajaxRequest(id, apiurl) {
     dataType: "jsonp",
     success: function (response) {
       var t = response.results.collection1;
-      for(var i = 0; i < t.length; i++) {
-        var prop = t[i].property1;
-        postArticle(id, prop["href"], prop["text"]);
+      var i = 0;                     //  set your counter to 1
+
+      function myLoop () {           //  create a loop function
+         setTimeout(function () {    //  call a 3s setTimeout when the loop is called
+            var prop = t[i].property1;         //  your code here
+            postArticle(id, prop["href"], prop["text"]);
+            i++;                     //  increment the counter
+            if (i < t.length) {            //  if the counter < 10, call the loop function
+               myLoop();             //  ..  again which will trigger another 
+            }                        //  ..  setTimeout()
+         }, 50)
       }
+
+      myLoop();
     }
   });
 }
