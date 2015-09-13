@@ -15,44 +15,7 @@
     <lastmod>2015-09-12T13:42:39-05:00</lastmod>
   </url>
   <url>
-    <loc>/Chrome Extension/src/override/bower_components/imagesloaded/test/index.html</loc>
-    <lastmod>2015-09-13T09:20:58-05:00</lastmod>
-  </url>
-  <url>
-    <loc>/Chrome Extension/src/override/bower_components/sassy-maps/examples/index.html</loc>
-    <lastmod>2015-09-13T09:20:58-05:00</lastmod>
-  </url>
-  <url>
-    <loc>/Chrome Extension/src/override/Chrome Extension/src/override/override.html</loc>
-    <lastmod>2015-09-13T09:20:57-05:00</lastmod>
-  </url>
-  <url>
     <loc>/Chrome Extension/src/override/index.html</loc>
-    <lastmod>2015-09-13T09:20:58-05:00</lastmod>
-  </url>
-  <url>
-    <loc>/Chrome Extension/src/override/news_sources.html</loc>
-    <lastmod>2015-09-13T09:20:58-05:00</lastmod>
-  </url>
-  <url>
-<<<<<<< HEAD
-    <loc>/Chrome Extension/src/override/bower_components/imagesloaded/test/index.html</loc>
-    <lastmod>2015-09-13T09:51:48-05:00</lastmod>
-  </url>
-  <url>
-    <loc>/Chrome Extension/src/override/bower_components/sassy-maps/examples/index.html</loc>
-    <lastmod>2015-09-13T09:51:48-05:00</lastmod>
-  </url>
-  <url>
-    <loc>/Chrome Extension/src/override/index.html</loc>
-    <lastmod>2015-09-13T09:51:48-05:00</lastmod>
-  </url>
-  <url>
-    <loc>/Chrome Extension/src/override2/index.html</loc>
-    <lastmod>2015-09-13T10:05:17-05:00</lastmod>
-=======
-    <loc>/Chrome Extension/src/override/override.html</loc>
-    <lastmod>2015-09-12T13:42:39-05:00</lastmod>
->>>>>>> e2948a3e0407281fc79d05a6d6c8f66363c13fd0
+    <lastmod>2015-09-13T10:21:44-05:00</lastmod>
   </url>
 </urlset>
