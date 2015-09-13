@@ -10,8 +10,12 @@
     "128": "icons/icon128.png"
   },
   "permissions": [
+<<<<<<< HEAD
     "*://www.kimonolabs.com/api/*",
     "storage"
+=======
+    "*://www.kimonolabs.com/api/*"
+>>>>>>> e2948a3e0407281fc79d05a6d6c8f66363c13fd0
   ],
   "default_locale": "en",
   "chrome_url_overrides": {
