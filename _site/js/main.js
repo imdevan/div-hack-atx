@@ -107,12 +107,12 @@ var api = {
       },
   mic: {
       url: "https://www.kimonolabs.com/api/dpbzxyrc?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-      name: "Mic News"
+      name: ".Mic"
       }
 }
 
 
 // Initial ajax requests
-ajaxRequest('#news-list', api.huffpost.url);
-ajaxRequest('#stem-list', api.verge.url);
-ajaxRequest('#scholarship-list', api.indian.url);
+ajaxRequest('#news-list', api.gnews.url);
+ajaxRequest('#stem-list', api.huffpost.url);
+ajaxRequest('#scholarship-list', api.mic.url);

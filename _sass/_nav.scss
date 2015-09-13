@@ -8,6 +8,13 @@ $navHeight: 6rem;
     position: relative;
     background: #fff;
 
+    &--logo {
+      transform: translateY(.25rem);
+      margin: 0 .5rem 0 0;
+      height: 2rem;
+      width: auto;
+    }
+
     &--title-item {
         animation: slideIn $medEaseInOut;
     }

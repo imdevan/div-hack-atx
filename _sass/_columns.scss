@@ -12,6 +12,22 @@
     padding: 2em 0;
     transition: background-color $medEaseInOut;
     
+    &.gnews {
+        @include colorColumn($gnewsC);
+    }
+
+    &.harvardbusiness{
+        @include colorColumn($harvardbusinessC);
+    }
+    
+    &.mvc {
+        @include colorColumn($mvcC);
+    }
+
+    &.mic {
+        @include colorColumn($micC);
+    }
+    
     &.huffpost {
         @include colorColumn($huffingtonPostC);
     }
