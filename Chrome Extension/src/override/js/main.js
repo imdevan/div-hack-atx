@@ -1,3 +1,48 @@
+// Check if items are in chrome storage
+chrome.storage.sync.get("col1",function(catigoryFromStore){
+  if(Object.keys(catigoryFromStore).length <= 0) {
+    chrome.storage.sync.set({"col1": "gnews"},function(){});
+  } 
+});
+
+chrome.storage.sync.get("col2",function(catigoryFromStore){
+  if(Object.keys(catigoryFromStore).length <= 0) {
+    chrome.storage.sync.set({"col2": "huffpost"},function(){});
+  } 
+});
+
+chrome.storage.sync.get("col3",function(catigoryFromStore){
+  if(Object.keys(catigoryFromStore).length <= 0) {
+    chrome.storage.sync.set({"col3": "mic"},function(){});
+  } 
+});
+
+chrome.storage.sync.get("col1",function(catigoryFromStore){
+  for(var key in catigoryFromStore) {
+    $("#newscolumn").find('.article-list--title-text').html(api[catigoryFromStore[key]].name);
+    $("#newscolumn").addClass(catigoryFromStore[key]);
+    ajaxRequest('#news-list', api[catigoryFromStore[key]].url);
+  }
+});
+
+chrome.storage.sync.get("col2",function(catigoryFromStore){
+  for(var key in catigoryFromStore) {
+    $("#stemcolumn").find('.article-list--title-text').html(api[catigoryFromStore[key]].name);
+    $("#stemcolumn").addClass(catigoryFromStore[key]);
+    ajaxRequest('#stem-list', api[catigoryFromStore[key]].url);
+  }
+});
+
+chrome.storage.sync.get("col3",function(catigoryFromStore){
+  for(var key in catigoryFromStore) {
+    $("#scholarcolumn").find('.article-list--title-text').html(api[catigoryFromStore[key]].name);
+    $("#scholarcolumn").addClass(catigoryFromStore[key]);
+    ajaxRequest('#scholarship-list', api[catigoryFromStore[key]].url);
+  }
+});
+
+chrome.storage.sync.set({"col3": "verge"},function(){});
+
 function postArticle(id, href, text) {
   $(id).append("<a class='article-list--link' href=\""+ href + "\"><li class='article-list--article'>" + text + "</li></a>" );
 }
@@ -112,7 +157,3 @@ var api = {
 }
 
 
-// Initial ajax requests
-ajaxRequest('#news-list', api.gnews.url);
-ajaxRequest('#stem-list', api.huffpost.url);
-ajaxRequest('#scholarship-list', api.mic.url);

@@ -1,3 +1,13 @@
+
+function setStorage(key, value) {
+    console.log(key);
+    console.log(value);
+    var test = {};
+    test[key] = value;
+    chrome.storage.sync.set(test,function(){});
+
+}
+
 var v, newsreader = {
     vars: {
         // ui elements
@@ -46,6 +56,9 @@ var v, newsreader = {
 
             // Make an ajax request to refill the column with sweet sweet data
             ajaxRequest(v.lists[v.updating_index], api[$(this).attr("data-id")].url);
+
+            var key = "col" + (v.updating_index+1);
+            setStorage(key, $(this).attr("data-id"));
         });
     }
 }
