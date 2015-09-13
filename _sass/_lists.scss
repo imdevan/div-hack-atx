@@ -8,31 +8,30 @@
     padding: 2em 0;
 }
 
-#newscolumn{
-    background-color: #99CCFF;
+#newscolumn {
+    background-color: $huffingtonPostColor;
 }
 
 #stemcolumn{
-    background-color: #5CD65C;
+    background-color: $vergeColor;
 }
 
 #scholarcolumn{
-    background-color: #FF6666;
+    background-color: $mashableColor;
 }
 
 .article-list {
-    padding:0;
+    @extend %base--ul;
 
     &--title {
         color: #fff;
         font-size: 2em;
         font-weight: 700;
-        list-style: none;
         cursor: pointer;
         margin:0;
         padding:10px;
+        position: relative;
         text-align: center;
-        // text-transform: uppercase;
     }
 
     &--link {
@@ -43,7 +42,6 @@
     &--article{
         background-color: white;
         margin: 1rem 2rem;
-        list-style: none;
         font-family: 'Hind', sans-serif;
         padding:10px;
         transition: all linear .2s;
