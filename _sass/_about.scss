@@ -1,0 +1,14 @@
+.about {
+    &--container {
+        background: white;
+        color: #343434;
+        display: none;
+        position: fixed;
+        top: 4rem;
+        right: 4rem;
+
+        &.open {
+            display: block;
+        }
+    }
+}

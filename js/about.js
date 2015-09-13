@@ -1,3 +1,3 @@
 $('#about--open-button').click(function () {
-    $('.about').addClass('.open');s
+    $('.about--container').toggleClass('open');
 });
