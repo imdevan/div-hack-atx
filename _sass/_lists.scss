@@ -1,7 +1,7 @@
 .article-list {
     @extend %base--ul;
 
-    &--title {
+    &--header {
         color: #fff;
         font-size: 2em;
         font-weight: 700;

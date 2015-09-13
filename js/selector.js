@@ -1,7 +1,7 @@
 var v, newsreader = {
     vars: {
         // ui elements
-        titles: $('.article-list--title'),
+        titles: $('.article-list--header'),
         lists: $('.article-list'),
         selectors: {
             obj: $('.selector'),
@@ -40,8 +40,12 @@ var v, newsreader = {
             // Change the color of the background column
             $(v.lists[v.updating_index]).parent().parent().attr('class', '_column ' + $(this).attr("data-id"));
 
+            // Change the name of the column
+            var title = $(v.lists[v.updating_index]).parent().parent().find('.article-list--title');
+            title.html(api[$(this).attr("data-id")].name);
+
             // Make an ajax request to refill the column with sweet sweet data
-            ajaxRequest(v.lists[v.updating_index], api[$(this).attr("data-id")]);
+            ajaxRequest(v.lists[v.updating_index], api[$(this).attr("data-id")].url);
         });
     }
 }
