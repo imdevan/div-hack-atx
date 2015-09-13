@@ -59,7 +59,8 @@ $selector-bg: white;
 }
 
 
-@keyframes fadeInVissibility {
+@keyframes fadeInVisibility {
+
     0% {
         visibility: hidden;
         opacity: 0;
