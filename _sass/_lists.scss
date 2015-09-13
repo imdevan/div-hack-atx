@@ -1,5 +1,4 @@
-
-.column {
+._column {
     float:left;
     box-sizing: border-box;
     width:33.3%;
@@ -22,17 +21,23 @@
     overflow-y:auto;
 }
 
-ul.article {
+.article-list {
     padding:0;
+    &--title {
+        font-weight: bold;
+        color:#999;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding:10px;
+        margin:0;
+    }
+
+    &--item{     
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(0,0,0,.2);
+    }
 }
-.column-title h2 {
-    font-weight: bold;
-    color:#999;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding:10px;
-    margin:0;
-}
+
 .article {
     background-color:white;
     margin: 1rem 0;
@@ -42,13 +47,9 @@ ul.article {
     transition: all linear .2s;
     box-shadow: 0 0 3px rgba(0,0,0,.2);
 }
-.article:hover:not(.column-title) {
-    opacity: 1;
-    box-shadow: 0 0 20px rgba(0,0,0,.2);
-}
+
 a{
     text-decoration: none;
     color:#343434;
     font-size:16px;
-
 }
