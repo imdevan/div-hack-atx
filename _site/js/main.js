@@ -35,14 +35,11 @@ ajaxRequest('#stem-list', api.verge);
 
 ajaxRequest('#scholarship-list', api.mashable);
 
-var titlename = 'news-list-title';
-document.getElementById(titlename).onclick = function () {
-	console.log("this is the news title clicked");
+var titlename = '#news-list-title';
+// refreshCol function ()
+$(titlename).click(function (  ) {
 	var listname = titlename.substr(0,titlename.length-6);
-	var correspondinglist = document.getElementById(listname);
-	console.log(correspondinglist);
-	while (correspondinglist.hasChildNodes()) {
-		correspondinglist.removeChild(correspondinglist.firstChild);
-	}
-	ajaxRequest('#' + listname, api.mashable);
-};
+	var correspondinglist = $(listname);
+	correspondinglist.empty();
+	ajaxRequest(listname, api.mashable);
+});
