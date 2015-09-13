@@ -1,5 +1,8 @@
-
-$huffingtonPostC: #99CCFF;
+$gnewsC: #99CCFF;
+$harvardbusinessC: #5E9FA3;
+$mvcC: #DCD1B4;
+$micC: #FAB87F;
+$huffingtonPostC: #F87E7B;
 $vergeC: #5CD65C;
 $mashableC: #FF6666;
 $IMDiversityC: #1abc9c;
@@ -27,6 +30,22 @@ $LGBTSC: #16a085;
 }
 
 .selector {
+    .gnews {
+        @include invertColorOnHover($gnewsC);
+    }
+
+    .harvardbusiness{
+        @include invertColorOnHover($harvardbusinessC);
+    }
+    
+    .mvc {
+        @include invertColorOnHover($mvcC);
+    }
+
+    .mic {
+        @include invertColorOnHover($micC);
+    }
+
     .huffpost {
         @include invertColorOnHover($huffingtonPostC);
     }
