@@ -8,6 +8,7 @@ var v, newsreader = {
             show: function (index) {
                 $(this.obj[index]).toggleClass('open');
             },
+            // This function is never used, consider removal
             hide: function (index) {
                 $(this.obj[index]).toggleClass('open');
             }
@@ -22,16 +23,24 @@ var v, newsreader = {
     bindUI: function () {
         var apiToLoad = "";
 
-        // event handling
+        // Show a menu when the associated title is clicked on
         v.titles.click(function () {
             v.updating_index = v.titles.index($(this));
             v.selectors.show(v.updating_index);
         });
 
+        // What happens when an option is selected from a menu item that is selected
         v.selector_buttons.click(function() {
+            // Close the menu
             $(v.selectors).removeClass("open");
+
+            // Empty the associated list
             $(v.lists[v.updating_index]).empty();
+
+            // Change the color of the background column
             $(v.lists[v.updating_index]).parent().parent().attr('class', '_column ' + $(this).attr("data-id"));
+
+            // Make an ajax request to refill the column with sweet sweet data
             ajaxRequest(v.lists[v.updating_index], api[$(this).attr("data-id")]);
         });
     }

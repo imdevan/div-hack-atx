@@ -25,6 +25,8 @@ function ajaxRequest(id, apiurl) {
     }
   });
 }
+
+// Our lovely apis
 var api = {
   huffpost:  "https://www.kimonolabs.com/api/1vnzmulw?apikey=82g96zzCQGXPX0Z3htZgjT74Vc7hvFCN",
   verge: "https://www.kimonolabs.com/api/2dje4o7w?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
@@ -44,8 +46,7 @@ var api = {
 }
 
 
+// Initial ajax requests
 ajaxRequest('#news-list', api.huffpost);
-
 ajaxRequest('#stem-list', api.verge);
-
 ajaxRequest('#scholarship-list', api.indian);
