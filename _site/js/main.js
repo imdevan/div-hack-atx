@@ -25,15 +25,13 @@ var api = {
   agsci: "https://www.kimonolabs.com/api/6vm998xm?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
   diversityinc: "https://www.kimonolabs.com/api/7te7qreq?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
   entrepreneur: "https://www.kimonolabs.com/api/97nzx0te?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-  scholarships: {
-    indian:  "https://www.kimonolabs.com/api/c96ihge8?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-    african: "https://www.kimonolabs.com/api/cpaf5bj8?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-    middleeastern: "https://www.kimonolabs.com/api/akv3o700?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-    latino: "https://www.kimonolabs.com/api/c3oxsuua?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-    asian: "https://www.kimonolabs.com/api/1z3d9pao?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-    women: "https://www.kimonolabs.com/api/1wtmqk46?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
-    lgbt: "https://www.kimonolabs.com/api/94qw18w8?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC"
-  }
+  indian:  "https://www.kimonolabs.com/api/c96ihge8?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+  african: "https://www.kimonolabs.com/api/cpaf5bj8?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+  middleeastern: "https://www.kimonolabs.com/api/akv3o700?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+  latino: "https://www.kimonolabs.com/api/c3oxsuua?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+  asian: "https://www.kimonolabs.com/api/1z3d9pao?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+  women: "https://www.kimonolabs.com/api/1wtmqk46?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+  lgbt: "https://www.kimonolabs.com/api/94qw18w8?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC"
 }
 
 
@@ -41,4 +39,4 @@ ajaxRequest('#news-list', api.huffpost);
 
 ajaxRequest('#stem-list', api.verge);
 
-ajaxRequest('#scholarship-list', api.mashable);
+ajaxRequest('#scholarship-list', api.indian);
