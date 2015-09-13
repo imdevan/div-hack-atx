@@ -7,9 +7,7 @@
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var inner = t[i].property1;
-      console.log(inner);
-      //<li class="article"><a href=""></a></li>
-      $("#newscolumn").append("<li class=\"article\"><a href=\""+ inner["href"] + "\">" + inner["text"] + "</a></li>" );
+      $("#newscolumn").append("<a href=\""+ inner["href"] + "\"><li class=\"article\">" + inner["text"] + "</li></a>" );
     }
   },
   error: function (xhr, status) {
@@ -26,9 +24,7 @@
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var inner = t[i].property1;
-      console.log(inner);
-      //<li class="article"><a href=""></a></li>
-      $("#stemcolumn").append("<li class=\"article\"><a href=\""+ inner["href"] + "\">" + inner["text"] + "</a></li>" );
+      $("#stemcolumn").append("<a href=\""+ inner["href"] + "\"><li class=\"article\">" + inner["text"] + "</li></a>" );
     }
   },
   error: function (xhr, status) {
