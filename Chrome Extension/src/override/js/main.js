@@ -17,11 +17,11 @@ function ajaxRequest(id, apiurl) {
             var prop = t[i].property1;
             postArticle(id, prop["href"], prop["text"])
             //  increment the counter
-            i++;              
-            // iterate the loop       
-            if (i < t.length) {    
-               // Loop!       
-               myLoop();            
+            i++;
+            // iterate the loop
+            if (i < t.length) {
+               // Loop!
+               myLoop();
             }
          }, 50) // set the delay
       }
@@ -92,11 +92,27 @@ var api = {
   lgbt: {
       url: "https://www.kimonolabs.com/api/94qw18w8?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
       name: "LGBT Scholarships"
+      },
+  gnews: {
+      url: "https://www.kimonolabs.com/api/cul7liwy?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+      name: "Google News"
+      },
+  harvardbusiness: {
+      url: "https://www.kimonolabs.com/api/4u3r2ec8?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+      name: "Harvard Business Review"
+      },
+  mvc: {
+      url: "https://www.kimonolabs.com/api/aoqstj36?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+      name: "Model View Culture"
+      },
+  mic: {
+      url: "https://www.kimonolabs.com/api/dpbzxyrc?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
+      name: ".Mic"
       }
 }
 
 
 // Initial ajax requests
-ajaxRequest('#news-list', api.huffpost.url);
-ajaxRequest('#stem-list', api.verge.url);
-ajaxRequest('#scholarship-list', api.indian.url);
+ajaxRequest('#news-list', api.gnews.url);
+ajaxRequest('#stem-list', api.huffpost.url);
+ajaxRequest('#scholarship-list', api.mic.url);
