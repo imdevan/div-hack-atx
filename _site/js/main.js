@@ -1,5 +1,5 @@
   function postArticle(id, href, text) {
-    $(id).append("<a chref=\""+ href + "\"><li class=\"article\">" + text + "</li></a>" );
+    $(id).append("<a class='article-list--link' href=\""+ href + "\"><li class='article-list--article'>" + text + "</li></a>" );
   }
 
 $.ajax({
@@ -11,7 +11,7 @@ crossDomain: true,
     for(var i = 0; i < t.length; i++) {
       var prop = t[i].property1;
       postArticle("#newscolumn", prop["href"], prop["text"]);
-    }
+    } 
   }
 });
 

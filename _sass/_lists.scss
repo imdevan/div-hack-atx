@@ -21,35 +21,31 @@
     overflow-y:auto;
 }
 
-.article-list {
+.article-list { 
     padding:0;
+
     &--title {
         font-weight: bold;
-        color:#999;
+        color: #fff;
         font-size: 18px;
         text-transform: uppercase;
         padding:10px;
         margin:0;
     }
-
-    &--item{     
-        opacity: 1;
-        box-shadow: 0 0 20px rgba(0,0,0,.2);
+    
+    &--link {   
+        text-decoration: none;
+        color:#343434;
     }
-}
 
-.article {
-    background-color:white;
-    margin: 1rem 0;
-    list-style: none;
-    font-family:Verdana;
-    padding:10px;
-    transition: all linear .2s;
-    box-shadow: 0 0 3px rgba(0,0,0,.2);
-}
-
-a{
-    text-decoration: none;
-    color:#343434;
-    font-size:16px;
+    &--article{    
+        box-shadow: 0 0 20px rgba(0,0,0,.2);
+        background-color: white;
+        margin: 1rem 0;
+        list-style: none;
+        font-family:Verdana;
+        padding:10px;
+        transition: all linear .2s;
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+    }
 }
