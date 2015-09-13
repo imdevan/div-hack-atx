@@ -2,7 +2,7 @@
     float:left;
     box-sizing: border-box;
     width:33.3%;
-    height:100vh - 6rem;
+    height: calc(100vh - $navHeight);
     padding:2em;
 }
 

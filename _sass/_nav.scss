@@ -1,6 +1,7 @@
+$navHeight: 6rem;
 .nav {
     border-bottom: 1px solid rgba(cadetblue,0.5);
-    line-height: 6rem;
+    line-height: $navHeight;
     padding: 0 2rem;
     position: relative;
     background: #fff;
