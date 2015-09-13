@@ -9,16 +9,11 @@ $navHeight: 6rem;
     background: #fff;
 
     &--title-item {
-        animation: fadeInUp 1.5s ease-in-out;
+        animation: slideIn $medEaseInOut;
     }
 
     &--action-item {
         position: absolute;
         right: 2rem;
     }
-}
-
-@keyframes fadeInUp {
-    0% { transform: translateY(2rem); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
 }
