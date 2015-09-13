@@ -1,5 +1,4 @@
 $selector-bg: white;
-$cubic: .6s cubic-bezier(0.23, 1, 0.32, 1);
 
 .selector {
     background: $selector-bg;
@@ -16,7 +15,7 @@ $cubic: .6s cubic-bezier(0.23, 1, 0.32, 1);
     visibility: hidden;
     opacity: 0;
     transform: translateY(50px); 
-    transition: all $cubic;
+    transition: all $quickCubic;
 
     &.open {
         visibility: visible;
