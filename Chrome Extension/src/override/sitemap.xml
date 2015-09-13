@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/news_sources.html</loc>
+  </url>
+  <url>
+    <loc>/bower_components/imagesloaded/test/index.html</loc>
+    <lastmod>2013-07-21T08:07:09-05:00</lastmod>
+  </url>
+  <url>
+    <loc>/bower_components/sassy-maps/examples/index.html</loc>
+    <lastmod>2014-06-03T09:49:55-05:00</lastmod>
+  </url>
+  <url>
+    <loc>/Chrome Extension/src/override/override.html</loc>
+    <lastmod>2015-09-12T13:58:12-05:00</lastmod>
+  </url>
+</urlset>

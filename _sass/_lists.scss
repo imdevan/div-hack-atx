@@ -1,29 +1,7 @@
-._column {
-    display: flex;
-    flex-direction: column;
-    float:left;
-    box-sizing: border-box;
-    width:33.3%;
-    height: calc(100vh - 6rem);
-    padding: 2em 0;
-}
-
-#newscolumn {
-    background-color: $huffingtonPostColor;
-}
-
-#stemcolumn{
-    background-color: $vergeColor;
-}
-
-#scholarcolumn{
-    background-color: $mashableColor;
-}
-
 .article-list {
     @extend %base--ul;
 
-    &--title {
+    &--header {
         color: #fff;
         font-size: 2em;
         font-weight: 700;
@@ -32,6 +10,11 @@
         padding:10px;
         position: relative;
         text-align: center;
+    }
+
+    &--title-icon {
+        transform: scaleY(-1) translateY(20%) translateX(-40%);
+        color: rgba(white, 0.5);
     }
 
     &--link {
@@ -63,9 +46,4 @@
             display: none;
         }
     }
-}
-
-@keyframes slideIn {
-    0% { transform: translateX(-25%); }
-    100% { transform: translateX(0%); }
 }

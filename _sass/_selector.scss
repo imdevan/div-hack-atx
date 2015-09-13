@@ -32,43 +32,4 @@ $selector-bg: white;
         line-height: 1.5em;
         cursor: pointer;
     }
-
-    &--huffpost {
-        color: $huffingtonPostColor;
-        &:hover {
-            background: $huffingtonPostColor;
-            color: $selector-bg;
-        }
-    }
-
-    &--verge {
-        color: $vergeColor;
-        &:hover {
-            background: $vergeColor;
-            color: $selector-bg;
-        }
-    }
-
-    &--mashable {
-        color: $mashableColor;
-        &:hover {
-            background: $mashableColor;
-            color: $selector-bg;
-        }
-    }
-}
-
-
-@keyframes fadeInVisibility {
-
-    0% {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
