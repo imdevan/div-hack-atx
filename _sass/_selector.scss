@@ -1,0 +1,17 @@
+.selector {
+    background: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 2.5px;
+    color: #343434;
+    display: block;
+    padding: 2em;
+    position: absolute;
+    top: 0; 
+    right: 5%;
+    width: 90%;
+
+    &--list {
+        @extend %base--ul;
+    }
+}

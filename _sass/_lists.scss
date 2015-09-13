@@ -21,17 +21,16 @@
 }
 
 .article-list {
-    padding:0;
+    @extend %base--ul;
 
     &--title {
         color: #fff;
         font-size: 2em;
         font-weight: 700;
-        list-style: none;
         margin:0;
         padding:10px;
+        position: relative;
         text-align: center;
-        // text-transform: uppercase;
     }
 
     &--link {
@@ -42,7 +41,6 @@
     &--article{
         background-color: white;
         margin: 1rem 2rem;
-        list-style: none;
         font-family: 'Hind', sans-serif;
         padding:10px;
         transition: all linear .2s;
