@@ -19,6 +19,10 @@ $selector-bg: white;
     transform: translateY(50px);
     transition: all $quickCubic;
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
     &.open {
         visibility: visible;
         opacity: 1;
