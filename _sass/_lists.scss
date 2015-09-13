@@ -8,16 +8,16 @@
     padding: 2em 0;
 }
 
-#newscolumn{
-    background-color: #99CCFF;
+#newscolumn {
+    background-color: $huffingtonPostColor;
 }
 
 #stemcolumn{
-    background-color: #5CD65C;
+    background-color: $vergeColor;
 }
 
 #scholarcolumn{
-    background-color: #FF6666;
+    background-color: $mashableColor;
 }
 
 .article-list {

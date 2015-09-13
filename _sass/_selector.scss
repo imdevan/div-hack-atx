@@ -1,17 +1,62 @@
+$selector-bg: white;
 .selector {
-    background: white;
-    border: 1px solid black;
-    box-sizing: border-box;
+    background: $selector-bg;
     border-radius: 2.5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(black, .2);
     color: #343434;
-    display: block;
-    padding: 2em;
     position: absolute;
-    top: 0; 
-    right: 5%;
-    width: 90%;
+    top: 50%; 
+    text-align: center;
+    right: 20%;
+    width: 60%;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0); 
+    }
 
     &--list {
         @extend %base--ul;
     }
+
+    &--list-item {
+        line-height: 1.5em;
+        cursor: pointer;
+    }
+
+    &--huffpost {
+        color: $huffingtonPostColor;
+        &:hover {
+            background: $huffingtonPostColor;
+            color: $selector-bg;
+        }
+    }
+
+    &--verge {
+        color: $vergeColor;
+        &:hover {
+            background: $vergeColor;
+            color: $selector-bg;
+        }
+    }
+
+    &--mashable {
+        color: $mashableColor;
+        &:hover {
+            background: $mashableColor;
+            color: $selector-bg;
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    0% { }
+    100% { transform: translateY(0); opacity: 1;}
 }
