@@ -10,7 +10,7 @@ crossDomain: true,
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var prop = t[i].property1;
-      postArticle("#newscolumn", prop["href"], prop["text"]);
+      postArticle("#news-list", prop["href"], prop["text"]);
     } 
   }
 });
@@ -25,7 +25,7 @@ dataType: "jsonp",
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var prop = t[i].property1;
-      postArticle("#stemcolumn", prop["href"], prop["text"]);
+      postArticle("#stem-list", prop["href"], prop["text"]);
     }
   }
 });
@@ -39,7 +39,7 @@ dataType: "jsonp",
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var prop = t[i].property1;
-      postArticle("#scholarcolumn", prop["href"], prop["text"]);
+      postArticle("#scholarship-list", prop["href"], prop["text"]);
     }
   }
 });

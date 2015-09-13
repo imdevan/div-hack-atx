@@ -1,2 +1,79 @@
-body{padding:0;margin:0;background:#4965a2;font-family:Raleway;font-weight:400}body div{color:#000}.nav{border-bottom:1px solid rgba(95,158,160,.5);padding:2pc;padding:2rem;position:relative;background:#fff}.nav--title-item{-webkit-animation:a 1.5s ease-in-out;animation:a 1.5s ease-in-out}.nav--action-item{position:absolute;right:2pc;right:2rem;top:2pc;top:2rem;font-size:2em}@-webkit-keyframes a{0%{-webkit-transform:translateY(2rem);transform:translateY(2rem);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes a{0%{-webkit-transform:translateY(2rem);transform:translateY(2rem);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}._column{float:left;box-sizing:border-box;width:33.3%;height:100vh;padding:2em}#newscolumn{background-color:#9cf;overflow-y:auto}#stemcolumn{background-color:#5cd65c;overflow-y:auto}#scholarcolumn{background-color:#f66;overflow-y:auto}.article-list{padding:0}.article-list--title{font-weight:700;color:#fff;font-size:18px;text-transform:uppercase;padding:10px;margin:0}.article-list--link{text-decoration:none;color:#343434}.article-list--article{box-shadow:0 0 20px rgba(0,0,0,.2);background-color:#fff;margin:1pc 0;margin:1rem 0;list-style:none;font-family:Verdana;padding:10px;transition:all linear .2s;box-shadow:0 0 3px rgba(0,0,0,.2)}
-/*# sourceMappingURL=s_main.css.map */
+/*
+Error: Incompatible units: 'rem' and 'vh'.
+        on line 5 of _sass/_lists.scss
+        from line 6 of _sass/s_main.scss
+
+1: @import "base";
+2: @import "nav";
+3: 
+4: @import "page";
+5: 
+6: @import "lists";
+
+Backtrace:
+_sass/_lists.scss:5
+_sass/s_main.scss:6
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/script/value/number.rb:416:in `coercion_factor'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/script/value/number.rb:349:in `coerce'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/script/value/number.rb:397:in `operate'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/script/value/number.rb:108:in `minus'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/script/tree/operation.rb:82:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:326:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/exec/sass_scss.rb:410:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Incompatible units: 'rem' and 'vh'.\A         on line 5 of _sass/_lists.scss\A         from line 6 of _sass/s_main.scss\A \A 1: @import \"base\";\A 2: @import \"nav\";\A 3: \A 4: @import \"page\";\A 5: \A 6: @import \"lists\";"; }

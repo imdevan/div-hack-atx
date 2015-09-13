@@ -1,6 +1,7 @@
 .nav {
     border-bottom: 1px solid rgba(cadetblue,0.5);
-    padding: 2rem;
+    line-height: 6rem;
+    padding: 0 2rem;
     position: relative;
     background: #fff;
 
@@ -11,8 +12,6 @@
     &--action-item {
         position: absolute;
         right: 2rem;
-        top: 2rem;
-        font-size: 2em;
     }
 }
 
