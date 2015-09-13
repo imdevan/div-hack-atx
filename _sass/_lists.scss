@@ -1,8 +1,10 @@
 ._column {
+    display: flex;
+    flex-direction: column;
     float:left;
     box-sizing: border-box;
     width:33.3%;
-    height: calc(100vh - $navHeight);
+    height: calc(100vh - 6rem);
     padding:2em;
 }
 
@@ -51,6 +53,8 @@
     &--container {
         overflow-y: scroll;
         height: 90%;
+        flex: 1;
+        height: 70%;
         &::-webkit-scrollbar { 
             display: none; 
         }
