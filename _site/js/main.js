@@ -7,7 +7,10 @@
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var inner = t[i].property1;
-      $("#newscolumn").append("<a href=\""+ inner["href"] + "\"><li class=\"article\">" + inner["text"] + "</li></a>" );
+
+      setTimeout(function() {
+        $("#newscolumn").append("<a href=\""+ inner["href"] + "\"><li class=\"article\">" + inner["text"] + "</li></a>" );
+      }, 200);
     }
   },
   error: function (xhr, status) {
@@ -25,7 +28,10 @@
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var inner = t[i].property1;
-      $("#stemcolumn").append("<a href=\""+ inner["href"] + "\"><li class=\"article\">" + inner["text"] + "</li></a>" );
+
+      setTimeout(function() {
+        $("#stemcolumn").append("<a href=\""+ inner["href"] + "\"><li class=\"article\">" + inner["text"] + "</li></a>" );
+      }, 200);
     }
   },
   error: function (xhr, status) {
@@ -42,7 +48,10 @@
     var t = response.results.collection1;
     for(var i = 0; i < t.length; i++) {
       var inner = t[i].property1;
-      $("#scholarcolumn").append("<a href=\""+ inner["href"] + "\"><li class=\"article\">" + inner["text"] + "</li></a>" );
+
+      setTimeout(function() {
+        $("#scholarcolumn").append("<a href=\""+ inner["href"] + "\"><li class=\"article\">" + inner["text"] + "</li></a>" );
+      }, 200);
     }
   },
   error: function (xhr, status) {
