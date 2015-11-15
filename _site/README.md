@@ -1,19 +1,4 @@
-# Panda But Not App
+# PanDiversity
 
-Only have to do once
-```
-npm install -g grunt-cli
-gem install jekyll
-gem install jekyll-sitemap
-```
+A Chrome extension to help the world discover news based around diversity (in tech and other subjects). 
 
-
-May have to do more times
-```
-npm install
-```
-
-To run
-```
-npm start
-```

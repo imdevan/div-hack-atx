@@ -15,7 +15,7 @@ function ajaxRequest(id, apiurl) {
          setTimeout(function () {
             // Property from the api call to the article list
             var prop = t[i].property1;
-            postArticle(id, prop["href"], prop["text"])
+            postArticle(id, prop["href"], prop["text"]);
             //  increment the counter
             i++;
             // iterate the loop
@@ -34,7 +34,7 @@ function ajaxRequest(id, apiurl) {
 // Our lovely apis
 var api = {
   huffpost: {
-      url: "https://www.kimonolabs.com/api/1vnzmulw?apikey=82g96zzCQGXPX0Z3htZgjT74Vc7hvFCN",
+      url: "https://www.kimonolabs.com/api/da1asbd4?apikey=F400P9FjVyuGFjUIs6x4pLLQXD8S8kpC",
       name: "Huffington Post"
     },
   verge: {
